@@ -1,0 +1,33 @@
+Dashboard de Acompanhamento de Preços de Criptomoedas
+
+Visão Geral:
+Este projeto consiste em um dashboard para acompanhar os preços das principais criptomoedas. Ele oferece uma interface amigável e intuitiva para visualizar os preços em tempo real, além de fornecer informações sobre a variação de preços.
+
+Tecnologias Utilizadas:
+Dash: Estrutura Python para criar aplicativos web analíticos interativos.
+Pandas: Biblioteca Python amplamente utilizada para manipulação e análise de dados.
+Requests: Biblioteca HTTP para Python que facilita o envio de solicitações HTTP.
+BeautifulSoup: Biblioteca Python para extrair dados de arquivos HTML e XML.
+Dash Bootstrap Components: Biblioteca que fornece componentes Bootstrap personalizados para Dash.
+
+Funcionalidades Principais:
+Visualização de Preços: Pode ser  selecionada mais  200 moedas para  dashboard para exibição foram selicionadas 5 moedas para este projeto os preços das criptomoedas mais populares e não polupares em tempo de aplicação a cada 1 minuto.
+Gráficos Interativos: Os preços são exibidos em gráficos de barras interativos, permitindo aos usuários visualizar facilmente as tendências de preço.
+Seleção de Criptomoedas: Os usuários podem selecionar quais criptomoedas desejam acompanhar, facilitando a personalização da experiência.
+Informações Detalhadas: Além dos preços, o dashboard também fornece informações detalhadas, como variação de preço e última atualização.
+Download de Dados: Os usuários podem baixar os dados de preços das criptomoedas em formato CSV para análises adicionais.
+
+Estrutura do Projeto:
+Páginas: As páginas do aplicativo Dash estão organizadas no diretório pages, incluindo a página inicial (home.py) e a página "Sobre" (about.py).
+Componentes: Componentes reutilizáveis, como gráficos e botões, são armazenados no diretório components.
+Scripts Python: O código principal do aplicativo, incluindo o layout e as funções de callback, estão no script app.py.
+
+Fluxo de Dados:
+Obtenção de Preços: O projeto utiliza a biblioteca requests para fazer solicitações HTTP aos sites das exchanges de criptomoedas e obter os preços em tempo real.
+Processamento de Dados: Os dados obtidos são processados e limpos usando a biblioteca BeautifulSoup, e então são armazenados em um DataFrame do Pandas para facilitar a manipulação.
+Atualização Automática: Um intervalo de atualização é definido para atualizar os preços das criptomoedas a cada minuto.
+Visualização de Dados: Os preços são exibidos em gráficos interativos e em cartões informativos na interface do usuário.
+Considerações de Design:
+Usabilidade: O design do dashboard prioriza a usabilidade e a facilidade de navegação, garantindo uma experiência agradável para o usuário.
+Responsividade: O layout é responsivo e se adapta a diferentes tamanhos de tela, permitindo uma experiência consistente em dispositivos móveis e desktops.
+Estilo Visual: O estilo visual é limpo e moderno, seguindo as diretrizes de design do Bootstrap para uma aparência profissional.
